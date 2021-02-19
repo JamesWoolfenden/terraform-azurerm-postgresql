@@ -5,6 +5,3 @@ resource "azurerm_postgresql_database" "examplea" {
   charset             = var.charset
   collation           = var.collation
 }
-
-
-

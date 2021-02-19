@@ -40,26 +40,34 @@ No requirements.
 | Name | Version |
 |------|---------|
 | azurerm | n/a |
-| random | n/a |
+
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [azurerm_postgresql_database](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_database) |
+| [azurerm_postgresql_server](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_server) |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| account\_replication\_type | n/a | `string` | `"LRS"` | no |
-| account\_tier | n/a | `string` | `"standard"` | no |
-| administrator\_login\_password | n/a | `string` | `""` | no |
-| audit\_retention\_in\_days | Retention period for Audit logs in days | `number` | `90` | no |
+| administrator\_login\_password | n/a | `string` | n/a | yes |
+| charset | n/a | `string` | `"UTF8"` | no |
+| collation | n/a | `string` | `"English_United States.1252"` | no |
 | common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | database\_name | n/a | `string` | n/a | yes |
 | resource\_group | n/a | `any` | n/a | yes |
-| sql | n/a | `map` | <pre>{<br>  "administrator_login": "admin",<br>  "minimum_tls_version": "1.2",<br>  "name": "mymssqlserver",<br>  "public_network_access_enabled": false,<br>  "version": "12.0"<br>}</pre> | no |
-| sql\_server | n/a | `string` | `"mysqlserver"` | no |
+| server | n/a | `map` | <pre>{<br>  "administrator_login": "psqladminun",<br>  "auto_grow_enabled": true,<br>  "backup_retention_days": 7,<br>  "sku_name": "B_Gen5_2",<br>  "storage_mb": 5120,<br>  "version": "9.5"<br>}</pre> | no |
+| server\_name | n/a | `string` | n/a | yes |
 
 ## Outputs
 
 No output.
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
