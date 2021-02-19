@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "examplea" {
-  name     = "api-rg-pro"
+  name     = "examplea"
   location = "West Europe"
 }
