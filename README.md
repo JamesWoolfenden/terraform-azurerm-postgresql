@@ -31,28 +31,29 @@ Supply values for your resource and database name, other values have defaults wh
 This project is 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| azurerm | n/a |
+| Name    | Version |
+| ------- | ------- |
+| azurerm | n/a     |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| administrator\_login\_password | n/a | `string` | n/a | yes |
-| charset | n/a | `string` | `"UTF8"` | no |
-| collation | n/a | `string` | `"English_United States.1252"` | no |
-| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| database\_name | n/a | `string` | n/a | yes |
-| resource\_group | Resource group to create objects in. | `any` | n/a | yes |
-| server | n/a | `map` | <pre>{<br>  "administrator_login": "psqladminun",<br>  "auto_grow_enabled": true,<br>  "backup_retention_days": 7,<br>  "sku_name": "B_Gen5_2",<br>  "storage_mb": 5120,<br>  "version": "9.5"<br>}</pre> | no |
-| server\_name | n/a | `string` | n/a | yes |
+| Name                         | Description                                        | Type       | Default                                                                                                                                                                                             | Required |
+| ---------------------------- | -------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: |
+| administrator_login_password | n/a                                                | `string`   | n/a                                                                                                                                                                                                 |   yes    |
+| charset                      | n/a                                                | `string`   | `"UTF8"`                                                                                                                                                                                            |    no    |
+| collation                    | n/a                                                | `string`   | `"English_United States.1252"`                                                                                                                                                                      |    no    |
+| common_tags                  | This is to help you add tags to your cloud objects | `map(any)` | n/a                                                                                                                                                                                                 |   yes    |
+| database_name                | n/a                                                | `string`   | n/a                                                                                                                                                                                                 |   yes    |
+| resource_group               | Resource group to create objects in.               | `any`      | n/a                                                                                                                                                                                                 |   yes    |
+| server                       | n/a                                                | `map`      | <pre>{<br> "administrator_login": "psqladminun",<br> "auto_grow_enabled": true,<br> "backup_retention_days": 7,<br> "sku_name": "B_Gen5_2",<br> "storage_mb": 5120,<br> "version": "9.5"<br>}</pre> |    no    |
+| server_name                  | n/a                                                | `string`   | n/a                                                                                                                                                                                                 |   yes    |
 
 ## Outputs
 
@@ -82,7 +83,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-azur
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright 2019-2021 James Woolfenden
 
 ## License
 
