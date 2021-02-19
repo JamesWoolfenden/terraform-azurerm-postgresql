@@ -25,7 +25,7 @@ variable "server" {
 }
 
 variable "resource_group" {
-
+  description = "Resource group to create objects in."
 }
 
 variable "database_name" {

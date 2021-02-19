@@ -61,7 +61,7 @@ No Modules.
 | collation | n/a | `string` | `"English_United States.1252"` | no |
 | common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | database\_name | n/a | `string` | n/a | yes |
-| resource\_group | n/a | `any` | n/a | yes |
+| resource\_group | Resource group to create objects in. | `any` | n/a | yes |
 | server | n/a | `map` | <pre>{<br>  "administrator_login": "psqladminun",<br>  "auto_grow_enabled": true,<br>  "backup_retention_days": 7,<br>  "sku_name": "B_Gen5_2",<br>  "storage_mb": 5120,<br>  "version": "9.5"<br>}</pre> | no |
 | server\_name | n/a | `string` | n/a | yes |
 
