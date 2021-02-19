@@ -1,0 +1,4 @@
+  server: Ensure that Geo Redundant Backups is enabled on PostgreSQL
+  server: ensure infrastructure_encryption_enabled is unset or true
+  server: ensure public_network_access_enabled is false
+  server: ssl_minimal_tls_version_enforced is tls 1.2 - TLS1_2
