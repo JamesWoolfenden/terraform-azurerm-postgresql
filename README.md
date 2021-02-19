@@ -18,7 +18,7 @@ Add **module.sql.tf** to your Terraform code:
 ```terraform
 module "postgresql" {
   source         = "JamesWoolfenden/postgresql/azurerm"
-  version        = "0.0.2"
+  version        = "0.0.3"
   resource_group = azurerm_resource_group.examplea
   database_name  = "mydatabase"
 }
