@@ -41,6 +41,17 @@ No requirements.
 |------|---------|
 | azurerm | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [azurerm_postgresql_database](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_database) |
+| [azurerm_postgresql_server](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_server) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -57,7 +68,6 @@ No requirements.
 ## Outputs
 
 No output.
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
