@@ -1,3 +1,6 @@
 common_tags = {
-  "createby" = "Terraform"
-"module" = "terraform-azurerm-postgresql" }
+  createdby = "Terraform"
+  module    = "terraform-azurerm-postgresql"
+}
+
+resource_group_name = "examplea"
