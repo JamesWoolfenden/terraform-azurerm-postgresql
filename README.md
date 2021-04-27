@@ -39,38 +39,38 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| azurerm | n/a |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [azurerm_postgresql_database](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_database) |
-| [azurerm_postgresql_server](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_server) |
+| Name | Type |
+|------|------|
+| [azurerm_postgresql_database.examplea](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_database) | resource |
+| [azurerm_postgresql_server.examplea](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_server) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| administrator\_login\_password | n/a | `string` | n/a | yes |
-| charset | n/a | `string` | `"UTF8"` | no |
-| collation | n/a | `string` | `"English_United States.1252"` | no |
-| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| database\_name | n/a | `string` | n/a | yes |
-| resource\_group | Resource group to create objects in. | `any` | n/a | yes |
-| server | n/a | `map` | <pre>{<br>  "administrator_login": "psqladminun",<br>  "auto_grow_enabled": true,<br>  "backup_retention_days": 7,<br>  "sku_name": "B_Gen5_2",<br>  "storage_mb": 5120,<br>  "version": "9.5"<br>}</pre> | no |
-| server\_name | n/a | `string` | n/a | yes |
+| <a name="input_administrator_login_password"></a> [administrator\_login\_password](#input\_administrator\_login\_password) | n/a | `string` | n/a | yes |
+| <a name="input_charset"></a> [charset](#input\_charset) | n/a | `string` | `"UTF8"` | no |
+| <a name="input_collation"></a> [collation](#input\_collation) | n/a | `string` | `"English_United States.1252"` | no |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| <a name="input_database_name"></a> [database\_name](#input\_database\_name) | n/a | `string` | n/a | yes |
+| <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | Resource group to create objects in. | `any` | n/a | yes |
+| <a name="input_server"></a> [server](#input\_server) | n/a | `map` | <pre>{<br>  "administrator_login": "psqladminun",<br>  "auto_grow_enabled": true,<br>  "backup_retention_days": 7,<br>  "sku_name": "B_Gen5_2",<br>  "storage_mb": 5120,<br>  "version": "9.5"<br>}</pre> | no |
+| <a name="input_server_name"></a> [server\_name](#input\_server\_name) | n/a | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| database | n/a |
-| server | n/a |
+| <a name="output_database"></a> [database](#output\_database) | n/a |
+| <a name="output_server"></a> [server](#output\_server) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects

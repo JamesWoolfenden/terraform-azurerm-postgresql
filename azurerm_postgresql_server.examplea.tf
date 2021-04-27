@@ -23,4 +23,7 @@ resource "azurerm_postgresql_server" "examplea" {
 
   infrastructure_encryption_enabled = true
   tags                              = var.common_tags
+  threat_detection_policy = {
+    enabled = true
+  }
 }
