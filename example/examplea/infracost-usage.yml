@@ -1,2 +1,4 @@
 version: 0.1
-resource_usage: {}
+resource_usage:
+  module.postgresql.azurerm_postgresql_server.examplea:
+    additional_backup_storage_gb: 0
